@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { BiMessageRounded } from "react-icons/bi";
 import { FaRetweet } from "react-icons/fa6";
-import { AiOutlineHeart } from "react-icons/ai";
+import { FaRegHeart } from "react-icons/fa";
 import { FiBookmark } from "react-icons/fi";
 import { HiOutlineUpload } from "react-icons/hi";
 import { IoIosStats } from "react-icons/io";
@@ -36,7 +36,7 @@ const XCard: React.FC = () => {
                             <FaRetweet/>
                         </div>
                         <div className="hover:bg-[#080808] hover:text-[#DE1672] rounded-full p-2">
-                            <AiOutlineHeart/>
+                            <FaRegHeart/>
                         </div>
                         <div className="hover:bg-[#0A171F] hover:text-[#1D9BF0] rounded-full p-2">
                             <IoIosStats/>
