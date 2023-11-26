@@ -5,9 +5,14 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "pbs.twimg.com",
+        hostname: "lh3.googleusercontent.com",
         pathname: "**"
       },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        pathname: "**"
+      }
     ],
   },
 }
