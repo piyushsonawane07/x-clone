@@ -8,6 +8,7 @@ import { FiBookmark } from "react-icons/fi";
 import { HiOutlineUpload } from "react-icons/hi";
 import { IoIosStats } from "react-icons/io";
 import { Tweet } from "@/gql/graphql";
+import Link from "next/link";
 
 interface XCardProps {
     data: Tweet
@@ -29,7 +30,11 @@ const XCard: React.FC<XCardProps> = (props) => {
                     />}
                 </div>
                 <div className="col-span-11 p-2 ms-2">
-                    <h5 className="font-bold text-base"> {data.author?.firstName} {data.author?.lastName}<span className="text-[#a0a0a0] text-sm ms-1 font-light">@piyush_s0nawane</span></h5>
+                    <h5 className="font-bold text-base"> 
+                    <Link href={`/${data.author?.id}`}>
+                    <span className="text-[#a0a0a0] text-sm ms-1 font-light">@piyush_s0nawane</span>
+                    </Link>
+                    </h5>
                     <p className="text-sm">
                         {data.content}
                     </p>
